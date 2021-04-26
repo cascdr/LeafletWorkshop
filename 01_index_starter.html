@@ -63,7 +63,7 @@
 		[51.1800, -114.20],
 		[51.1200, -114.20],
 		[51.1400, -114.25]
-	]).addTo(mymap).bindPopup("I am a polygon.");
+	]).addTo(mymap).bindPopup("Check it out.");
 
 
 	var popup = L.popup();
@@ -71,7 +71,7 @@
 	function onMapClick(e) {
 		popup
 			.setLatLng(e.latlng)
-			.setContent("You clicked the map at " + e.latlng.toString())
+			.setContent("You found " + e.latlng.toString())
 			.openOn(mymap);
 	}
 

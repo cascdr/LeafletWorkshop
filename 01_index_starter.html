@@ -135,14 +135,14 @@
 
 
 	var popup = L.popup();
-
+*/
 	function onMapClick(e) {
 		popup
 			.setLatLng(e.latlng)
 			.setContent("You found " + e.latlng.toString())
 			.openOn(mymap);
 	}
-*/
+
 	mymap.on('click', onMapClick);
   
     
